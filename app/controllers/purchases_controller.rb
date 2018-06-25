@@ -1,5 +1,5 @@
 class PurchasesController < ApplicationController
- def show
-   purchase = purchase.find_by id: params[:id]
- end
+  def show
+    @purchase = Purchase.find_by_uuid(params[:id])
+  end
 end
